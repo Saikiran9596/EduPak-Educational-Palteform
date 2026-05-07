@@ -1,0 +1,57 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+}
+
+model Tutor {
+  id                String   @id
+  name              String
+  tagline           String?
+  qualification     String?
+  subjects          Json     @default("[]")
+  levelTags         Json     @default("[]") @map("level_tags")
+  rating            Decimal  @default(0) @db.Decimal(3, 2)
+  reviewsCount      Int      @default(0) @map("reviews_count")
+  city              String?
+  area              String?
+  modes             Json     @default("[]")
+  pricePkrPerHour   Int?     @map("price_pkr_per_hour")
+  verified          Boolean  @default(false)
+  avatarUrl         String?  @map("avatar_url")
+  about             String[] @default([])
+  createdAt         DateTime @default(now()) @map("created_at")
+  inquiries         Inquiry[]
+
+  @@map("tutors")
+}
+
+model Inquiry {
+  id           String   @id @default(uuid())
+  createdAt    DateTime @default(now()) @map("created_at")
+  fullName     String   @map("full_name")
+  email        String
+  phone        String
+  city         String
+  role         String
+  requirements String
+  tutorId      String?  @map("tutor_id")
+  tutor        Tutor?   @relation(fields: [tutorId], references: [id])
+
+  @@map("inquiries")
+}
+
+model Application {
+  id            String   @id @default(uuid())
+  createdAt     DateTime @default(now()) @map("created_at")
+  fullName      String   @map("full_name")
+  email         String
+  phone         String
+  qualification String
+  subjects      String
+  bio           String
+
+  @@map("applications")
+}
