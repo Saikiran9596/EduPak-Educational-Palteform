@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FAQ - EduSuccess Pakistan</title>
+<!-- Google Fonts: Manrope -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#66df75",
+                    "on-tertiary-fixed-variant": "#43474a",
+                    "on-secondary-fixed": "#002106",
+                    "tertiary-fixed-dim": "#c4c7ca",
+                    "secondary-container": "#80f98b",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#e5e8ee",
+                    "on-secondary-container": "#007327",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#003366",
+                    "surface-tint": "#3a5f94",
+                    "on-tertiary-container": "#999c9f",
+                    "on-secondary-fixed-variant": "#00531a",
+                    "surface-bright": "#f7f9ff",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed": "#83fc8e",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "background": "#f7f9ff",
+                    "tertiary-container": "#303436",
+                    "primary": "#001e40",
+                    "tertiary": "#1b1f21",
+                    "surface-dim": "#d7dadf",
+                    "outline-variant": "#c3c6d1",
+                    "on-primary-fixed": "#001b3c",
+                    "error-container": "#ffdad6",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#a7c8ff",
+                    "primary-fixed-dim": "#a7c8ff",
+                    "outline": "#737780",
+                    "on-primary-fixed-variant": "#1f477b",
+                    "tertiary-fixed": "#e0e3e6",
+                    "on-background": "#181c20",
+                    "inverse-surface": "#2d3135",
+                    "surface": "#f7f9ff",
+                    "on-surface-variant": "#43474f",
+                    "inverse-on-surface": "#eef1f6",
+                    "surface-container-low": "#f1f4f9",
+                    "on-surface": "#181c20",
+                    "surface-container-highest": "#e0e3e8",
+                    "surface-container": "#ebeef3",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed": "#181c1e",
+                    "secondary": "#006e25",
+                    "primary-fixed": "#d5e3ff",
+                    "surface-variant": "#e0e3e8",
+                    "on-primary-container": "#799dd6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "md": "24px",
+                    "xl": "80px",
+                    "xs": "4px",
+                    "sm": "12px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "lg": "48px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "h1": ["Manrope"],
+                    "h2": ["Manrope"],
+                    "label-bold": ["Manrope"],
+                    "h3": ["Manrope"],
+                    "body-lg": ["Manrope"],
+                    "caption": ["Manrope"],
+                    "body-md": ["Manrope"]
+            },
+            "fontSize": {
+                    "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "h2": ["36px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-bold": ["14px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "h3": ["24px", {"lineHeight": "1.4", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { background-color: #f7f9ff; } /* surface */
+        /* Hide scrollbar for tabs */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col pt-20 pb-20 md:pb-0">
+<!-- TopNavBar (Shared Component) -->
+<header class="fixed top-0 w-full z-50 border-b border-slate-100 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md shadow-sm border-b border-gray-100 dark:border-gray-800">
+<div class="flex items-center justify-between mx-auto max-w-[1200px] h-20 px-6">
+<!-- Brand -->
+<a class="text-xl font-black text-blue-900 dark:text-white tracking-tighter flex items-center gap-2" href="#">
+                EduSuccess Pakistan
+            </a>
+<!-- Navigation Links (Web) -->
+<nav class="hidden md:flex items-center gap-6 font-manrope text-sm font-semibold tracking-tight">
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/50 rounded-md transition-all px-3 py-2" href="#">Find Tutors</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/50 rounded-md transition-all px-3 py-2" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/50 rounded-md transition-all px-3 py-2" href="#">Pricing</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/50 rounded-md transition-all px-3 py-2" href="#">Recruitment</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/50 rounded-md transition-all px-3 py-2" href="#">About Us</a>
+</nav>
+<!-- Actions -->
+<div class="hidden md:flex items-center gap-4">
+<a class="font-manrope text-sm font-semibold tracking-tight text-blue-900 dark:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/50 rounded-md transition-all px-4 py-2 border border-blue-900" href="#">Book a Lesson</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-white bg-blue-900 rounded-md px-4 py-2 hover:opacity-80 transition-all" href="#">Join as Tutor</a>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow">
+<!-- Hero Search Section -->
+<section class="bg-primary relative overflow-hidden py-xl px-6 flex flex-col items-center justify-center text-center">
+<!-- Decorative Background Pattern (Subtle Gradient) -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary-container/20 to-transparent z-0"></div>
+<div class="relative z-10 w-full max-w-3xl mx-auto space-y-8">
+<h1 class="font-h1 text-h1 text-on-primary">How can we help you today?</h1>
+<p class="font-body-lg text-body-lg text-inverse-primary">Search our knowledge base or browse categories below to find the answers you need.</p>
+<!-- Search Bar -->
+<div class="relative w-full max-w-2xl mx-auto">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant z-10" style="font-variation-settings: 'FILL' 0;">search</span>
+<input class="w-full h-12 pl-12 pr-4 rounded-full bg-surface-container-lowest border border-outline-variant text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary-fixed-dim transition-all shadow-sm" placeholder="Search for 'pricing', 'tutor requirements', etc." type="text"/>
+</div>
+</div>
+</section>
+<!-- Two Column Layout Area -->
+<div class="mx-auto max-w-[1200px] px-6 py-xl grid grid-cols-1 lg:grid-cols-12 gap-8 relative items-start">
+<!-- Left Column: FAQ Content (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-8">
+<!-- Category Tabs -->
+<div class="flex overflow-x-auto no-scrollbar gap-2 pb-2">
+<button class="px-4 py-2 rounded-full bg-secondary text-on-secondary font-label-bold text-label-bold whitespace-nowrap shadow-sm transition-all hover:shadow-md">All Questions</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-highest text-on-surface-variant font-label-bold text-label-bold whitespace-nowrap hover:bg-surface-variant transition-all">Students</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-highest text-on-surface-variant font-label-bold text-label-bold whitespace-nowrap hover:bg-surface-variant transition-all">Parents</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-highest text-on-surface-variant font-label-bold text-label-bold whitespace-nowrap hover:bg-surface-variant transition-all">Tutors</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-highest text-on-surface-variant font-label-bold text-label-bold whitespace-nowrap hover:bg-surface-variant transition-all">Pricing</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-highest text-on-surface-variant font-label-bold text-label-bold whitespace-nowrap hover:bg-surface-variant transition-all">Technical</button>
+</div>
+<!-- Accordion List -->
+<div class="flex flex-col gap-4">
+<!-- Accordion Item 1 (Expanded Example) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-variant overflow-hidden">
+<div class="p-6 flex items-start justify-between gap-4 cursor-pointer hover:bg-surface-bright transition-colors">
+<h3 class="font-h3 text-h3 text-on-surface">How do I book a lesson with a tutor?</h3>
+<span class="material-symbols-outlined text-primary mt-1 transform rotate-180 transition-transform" style="font-variation-settings: 'FILL' 0;">expand_more</span>
+</div>
+<div class="px-6 pb-6 pt-0 border-t border-surface-variant mt-2">
+<p class="font-body-md text-body-md text-on-surface-variant mt-4">Booking a lesson is simple. Once you have created an account and found a tutor whose profile matches your needs, click the "Book Now" button on their profile. You will be prompted to select an available time slot from their calendar and proceed to secure checkout.</p>
+</div>
+</div>
+<!-- Accordion Item 2 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-variant overflow-hidden">
+<div class="p-6 flex items-start justify-between gap-4 cursor-pointer hover:bg-surface-bright transition-colors">
+<h3 class="font-h3 text-h3 text-on-surface">Are all your tutors verified?</h3>
+<span class="material-symbols-outlined text-on-surface-variant mt-1 transition-transform" style="font-variation-settings: 'FILL' 0;">expand_more</span>
+</div>
+</div>
+<!-- Accordion Item 3 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-variant overflow-hidden">
+<div class="p-6 flex items-start justify-between gap-4 cursor-pointer hover:bg-surface-bright transition-colors">
+<h3 class="font-h3 text-h3 text-on-surface">What payment methods do you accept?</h3>
+<span class="material-symbols-outlined text-on-surface-variant mt-1 transition-transform" style="font-variation-settings: 'FILL' 0;">expand_more</span>
+</div>
+</div>
+<!-- Accordion Item 4 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-variant overflow-hidden">
+<div class="p-6 flex items-start justify-between gap-4 cursor-pointer hover:bg-surface-bright transition-colors">
+<h3 class="font-h3 text-h3 text-on-surface">Can I cancel or reschedule a booked lesson?</h3>
+<span class="material-symbols-outlined text-on-surface-variant mt-1 transition-transform" style="font-variation-settings: 'FILL' 0;">expand_more</span>
+</div>
+</div>
+<!-- Accordion Item 5 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-variant overflow-hidden">
+<div class="p-6 flex items-start justify-between gap-4 cursor-pointer hover:bg-surface-bright transition-colors">
+<h3 class="font-h3 text-h3 text-on-surface">How do online lessons work?</h3>
+<span class="material-symbols-outlined text-on-surface-variant mt-1 transition-transform" style="font-variation-settings: 'FILL' 0;">expand_more</span>
+</div>
+</div>
+<!-- Accordion Item 6 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-variant overflow-hidden">
+<div class="p-6 flex items-start justify-between gap-4 cursor-pointer hover:bg-surface-bright transition-colors">
+<h3 class="font-h3 text-h3 text-on-surface">What are the requirements to become a tutor?</h3>
+<span class="material-symbols-outlined text-on-surface-variant mt-1 transition-transform" style="font-variation-settings: 'FILL' 0;">expand_more</span>
+</div>
+</div>
+<!-- Accordion Item 7 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-variant overflow-hidden">
+<div class="p-6 flex items-start justify-between gap-4 cursor-pointer hover:bg-surface-bright transition-colors">
+<h3 class="font-h3 text-h3 text-on-surface">Is there a satisfaction guarantee?</h3>
+<span class="material-symbols-outlined text-on-surface-variant mt-1 transition-transform" style="font-variation-settings: 'FILL' 0;">expand_more</span>
+</div>
+</div>
+<!-- Accordion Item 8 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-variant overflow-hidden">
+<div class="p-6 flex items-start justify-between gap-4 cursor-pointer hover:bg-surface-bright transition-colors">
+<h3 class="font-h3 text-h3 text-on-surface">How do I access my past lesson recordings?</h3>
+<span class="material-symbols-outlined text-on-surface-variant mt-1 transition-transform" style="font-variation-settings: 'FILL' 0;">expand_more</span>
+</div>
+</div>
+<!-- Accordion Item 9 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-variant overflow-hidden">
+<div class="p-6 flex items-start justify-between gap-4 cursor-pointer hover:bg-surface-bright transition-colors">
+<h3 class="font-h3 text-h3 text-on-surface">Can parents monitor student progress?</h3>
+<span class="material-symbols-outlined text-on-surface-variant mt-1 transition-transform" style="font-variation-settings: 'FILL' 0;">expand_more</span>
+</div>
+</div>
+<!-- Accordion Item 10 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-variant overflow-hidden">
+<div class="p-6 flex items-start justify-between gap-4 cursor-pointer hover:bg-surface-bright transition-colors">
+<h3 class="font-h3 text-h3 text-on-surface">What if I have technical issues during a class?</h3>
+<span class="material-symbols-outlined text-on-surface-variant mt-1 transition-transform" style="font-variation-settings: 'FILL' 0;">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Sticky Sidebar (4 Cols) -->
+<div class="lg:col-span-4 lg:sticky lg:top-[120px] self-start w-full">
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.08)] border border-surface-variant p-8 flex flex-col gap-6 relative overflow-hidden">
+<!-- Decorative subtle accent -->
+<div class="absolute top-0 left-0 w-full h-1 bg-secondary"></div>
+<div class="flex flex-col gap-2">
+<h2 class="font-h2 text-h2 text-on-surface">Still have questions?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Our support team is available to help you navigate your educational journey.</p>
+</div>
+<div class="flex flex-col gap-4 mt-2">
+<!-- Contact Method: WhatsApp -->
+<a class="flex items-center gap-4 p-4 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors group" href="#">
+<div class="w-12 h-12 rounded-full bg-[#25D366]/10 flex items-center justify-center text-[#25D366] group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-bold text-label-bold text-on-surface">Chat on WhatsApp</span>
+<span class="font-caption text-caption text-on-surface-variant">Fastest response</span>
+</div>
+</a>
+<!-- Contact Method: Call -->
+<a class="flex items-center gap-4 p-4 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors group" href="#">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-bold text-label-bold text-on-surface">Call Support</span>
+<span class="font-caption text-caption text-on-surface-variant">+92 300 1234567</span>
+</div>
+</a>
+<!-- Contact Method: Email -->
+<a class="flex items-center gap-4 p-4 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors group" href="#">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mail</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-bold text-label-bold text-on-surface">Email Us</span>
+<span class="font-caption text-caption text-on-surface-variant">support@edusuccess.pk</span>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom CTA Banner -->
+<div class="mx-auto max-w-[1200px] px-6 mb-xl">
+<div class="bg-primary-container rounded-2xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.08)] relative flex flex-col md:flex-row items-center justify-between p-8 md:p-12">
+<!-- Decorative Circle -->
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-white/5 rounded-full blur-2xl"></div>
+<div class="flex flex-col gap-4 relative z-10 max-w-xl text-center md:text-left mb-8 md:mb-0">
+<h2 class="font-h2 text-h2 text-on-primary-container">Ready to start your journey?</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container/80">Join thousands of students achieving their academic goals with top-rated tutors across Pakistan.</p>
+</div>
+<div class="relative z-10 flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+<button class="px-8 py-4 bg-secondary text-on-secondary font-label-bold text-label-bold rounded-lg hover:opacity-90 transition-opacity shadow-md text-center whitespace-nowrap">Find a Tutor</button>
+<button class="px-8 py-4 bg-transparent border-2 border-on-primary-container text-on-primary-container font-label-bold text-label-bold rounded-lg hover:bg-on-primary-container/10 transition-colors text-center whitespace-nowrap">Become a Tutor</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full py-12 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 border-t border-gray-200 dark:border-gray-800 mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mx-auto max-w-[1200px] px-6">
+<div class="flex flex-col gap-4 md:col-span-1">
+<span class="text-lg font-bold text-blue-900 dark:text-white">EduSuccess Pakistan</span>
+<p class="font-manrope text-sm text-slate-500 dark:text-slate-400">© 2024 EduSuccess Pakistan. High-quality education for a brighter future.</p>
+</div>
+<div class="flex flex-col gap-3 md:col-span-3 lg:col-span-2 md:col-start-2 lg:col-start-3 md:flex-row md:justify-end gap-x-8">
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 Transition-all duration-300 ease-in-out" href="#">Privacy Policy</a>
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 Transition-all duration-300 ease-in-out" href="#">Terms of Service</a>
+<a class="font-manrope text-sm text-blue-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 Transition-all duration-300 ease-in-out" href="#">FAQ</a>
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 Transition-all duration-300 ease-in-out" href="#">Contact Support</a>
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 Transition-all duration-300 ease-in-out" href="#">Tutor Portal</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Shared Component - Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-white dark:bg-slate-900 rounded-t-2xl border-t border-slate-100 dark:border-slate-800 border-t border-gray-100 dark:border-gray-800 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] z-50">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 active:bg-slate-100 dark:active:bg-slate-800 vibrate-short on-press transition-transform duration-200 p-2 rounded-xl" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="font-manrope text-[10px] font-bold uppercase tracking-widest">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 active:bg-slate-100 dark:active:bg-slate-800 vibrate-short on-press transition-transform duration-200 p-2 rounded-xl" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">search</span>
+<span class="font-manrope text-[10px] font-bold uppercase tracking-widest">Search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 active:bg-slate-100 dark:active:bg-slate-800 vibrate-short on-press transition-transform duration-200 p-2 rounded-xl" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">event_available</span>
+<span class="font-manrope text-[10px] font-bold uppercase tracking-widest">My Bookings</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 active:bg-slate-100 dark:active:bg-slate-800 vibrate-short on-press transition-transform duration-200 p-2 rounded-xl" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">person</span>
+<span class="font-manrope text-[10px] font-bold uppercase tracking-widest">Profile</span>
+</a>
+</nav>
+</body></html>

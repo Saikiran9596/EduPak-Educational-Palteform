@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tutor Recruitment - EduSuccess Pakistan</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#66df75",
+                        "on-tertiary-fixed-variant": "#43474a",
+                        "on-secondary-fixed": "#002106",
+                        "tertiary-fixed-dim": "#c4c7ca",
+                        "secondary-container": "#80f98b",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e5e8ee",
+                        "on-secondary-container": "#007327",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#003366",
+                        "surface-tint": "#3a5f94",
+                        "on-tertiary-container": "#999c9f",
+                        "on-secondary-fixed-variant": "#00531a",
+                        "surface-bright": "#f7f9ff",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#83fc8e",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "background": "#f7f9ff",
+                        "tertiary-container": "#303436",
+                        "primary": "#001e40",
+                        "tertiary": "#1b1f21",
+                        "surface-dim": "#d7dadf",
+                        "outline-variant": "#c3c6d1",
+                        "on-primary-fixed": "#001b3c",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#a7c8ff",
+                        "primary-fixed-dim": "#a7c8ff",
+                        "outline": "#737780",
+                        "on-primary-fixed-variant": "#1f477b",
+                        "tertiary-fixed": "#e0e3e6",
+                        "on-background": "#181c20",
+                        "inverse-surface": "#2d3135",
+                        "surface": "#f7f9ff",
+                        "on-surface-variant": "#43474f",
+                        "inverse-on-surface": "#eef1f6",
+                        "surface-container-low": "#f1f4f9",
+                        "on-surface": "#181c20",
+                        "surface-container-highest": "#e0e3e8",
+                        "surface-container": "#ebeef3",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#181c1e",
+                        "secondary": "#006e25",
+                        "primary-fixed": "#d5e3ff",
+                        "surface-variant": "#e0e3e8",
+                        "on-primary-container": "#799dd6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "xl": "80px",
+                        "xs": "4px",
+                        "sm": "12px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "lg": "48px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "h1": ["Manrope"],
+                        "h2": ["Manrope"],
+                        "label-bold": ["Manrope"],
+                        "h3": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "caption": ["Manrope"],
+                        "body-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "h1": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "h2": ["36px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-bold": ["14px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "h3": ["24px", { "lineHeight": "1.4", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "caption": ["12px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background antialiased pt-20">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 w-full z-50 border-b border-slate-100 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md shadow-sm border-b border-gray-100 dark:border-gray-800">
+<div class="flex items-center justify-between mx-auto max-w-[1200px] h-20 px-6">
+<div class="text-xl font-black text-blue-900 dark:text-white tracking-tighter">EduSuccess Pakistan</div>
+<div class="hidden md:flex items-center gap-6">
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors" href="#">Find Tutors</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors" href="#">Services</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors" href="#">Pricing</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-blue-900 dark:text-blue-400 border-b-2 border-blue-900 dark:border-blue-400 pb-1 opacity-80 scale-95 duration-150" href="#">Recruitment</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors" href="#">About Us</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:block px-4 py-2 font-label-bold text-label-bold text-primary border-2 border-primary rounded-lg hover:bg-surface-variant transition-colors">Book a Lesson</button>
+<button class="px-4 py-2 font-label-bold text-label-bold text-on-primary bg-primary rounded-lg hover:opacity-90 transition-opacity">Join as Tutor</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="bg-primary text-on-primary pt-xl pb-xl relative overflow-hidden">
+<div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+<div class="space-y-6">
+<h1 class="font-h1 text-h1 text-on-primary">Turn Your Knowledge Into Income</h1>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim max-w-lg">
+                        Join Pakistan's premium network of educators. Connect with motivated students, set your own rates, and build a rewarding tutoring career with EduSuccess.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="px-8 py-3 bg-secondary text-on-secondary font-label-bold text-label-bold rounded-lg hover:bg-secondary-container hover:text-on-secondary-container transition-colors shadow-sm" href="#registration">
+                            Apply Now
+                        </a>
+<a class="px-8 py-3 bg-transparent border-2 border-primary-fixed-dim text-primary-fixed-dim font-label-bold text-label-bold rounded-lg hover:bg-primary-container transition-colors" href="#how-it-works">
+                            Learn More
+                        </a>
+</div>
+</div>
+<div class="relative h-[400px] rounded-xl overflow-hidden shadow-2xl hidden lg:block">
+<img alt="Tutor helping student" class="absolute inset-0 w-full h-full object-cover" data-alt="Professional female tutor in modern brightly lit classroom helping a student, conveying trust and academic excellence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRGhJCaVB9I8zt011y3zT3cDyTtkj8TrJimrJEM2cOtr2WfxCj-v9gOUmDE3OTupRo8jKphE6AyvyvU-4CgIkZTXoamDbedW-VxyNVaEXEZoVNU30QUvYjX5U3oHQG3a5vTDxvLXewqmkbb5y6DIousX4VPp-vSHuamj4Kw3hf8KjF34TOmMbmBKFMBS5ouCtU3f4Poqjrq6Kg5OPpFhVnC63tKJvnDDYRRrpomWZeikV40v1KRAPD42tKCMl62uW7K4oKZtwHBYyb"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+</div>
+</div>
+<!-- Decorative background elements -->
+<div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-bl from-primary-container/30 to-transparent pointer-events-none"></div>
+</section>
+<!-- Benefits Section (Bento Grid) -->
+<section class="py-xl max-w-[1200px] mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="font-h2 text-h2 text-on-background mb-4">Why Teach With Us?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">We provide the platform, tools, and students. You bring the expertise.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Large Card -->
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-shadow border border-surface-variant flex flex-col justify-between relative overflow-hidden group">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4 block" style="font-variation-settings: 'FILL' 1;">schedule</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-2">Flexible Hours</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">You are in control. Set your availability, choose how many hours you want to work, and balance tutoring with your other commitments effortlessly.</p>
+</div>
+<div class="absolute bottom-0 right-0 w-64 h-64 bg-secondary-container/20 rounded-tl-full -mr-8 -mb-8 group-hover:scale-110 transition-transform duration-500"></div>
+</div>
+<!-- Standard Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-shadow border border-surface-variant">
+<span class="material-symbols-outlined text-4xl text-primary mb-4 block" style="font-variation-settings: 'FILL' 1;">home_work</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-2">Work From Home</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Teach students across Pakistan from the comfort of your own home using our integrated digital classroom.</p>
+</div>
+<!-- Standard Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-shadow border border-surface-variant">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4 block" style="font-variation-settings: 'FILL' 1;">payments</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-2">Competitive Earnings</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Set your own hourly rates based on your qualifications and experience. Keep the majority of what you earn.</p>
+</div>
+<!-- Standard Card -->
+<div class="lg:col-span-2 bg-primary rounded-xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.05)] flex items-center justify-between text-on-primary overflow-hidden relative">
+<div class="relative z-10 max-w-lg">
+<span class="material-symbols-outlined text-4xl text-secondary-container mb-4 block" style="font-variation-settings: 'FILL' 1;">storefront</span>
+<h3 class="font-h3 text-h3 mb-2">Free Professional Listing</h3>
+<p class="font-body-md text-body-md text-primary-fixed-dim">Create a compelling profile showcasing your expertise. We market your services to thousands of students actively seeking help.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Requirements & How to Join (Asymmetric Layout) -->
+<section class="py-xl bg-surface-container-low border-y border-surface-variant" id="how-it-works">
+<div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Requirements List -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-8 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-variant h-fit sticky top-28">
+<h3 class="font-h3 text-h3 text-on-surface mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">fact_check</span>
+                        Minimum Requirements
+                    </h3>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<strong class="font-label-bold text-label-bold text-on-surface block">Educational Background</strong>
+<span class="font-body-md text-body-md text-on-surface-variant">Minimum Bachelor's degree or currently enrolled in a recognized university program.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<strong class="font-label-bold text-label-bold text-on-surface block">Subject Expertise</strong>
+<span class="font-body-md text-body-md text-on-surface-variant">Demonstrable mastery in chosen subjects (transcript or certification may be required).</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<strong class="font-label-bold text-label-bold text-on-surface block">Technical Setup</strong>
+<span class="font-body-md text-body-md text-on-surface-variant">Reliable internet connection, working webcam, and clear microphone for online sessions.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<strong class="font-label-bold text-label-bold text-on-surface block">Professionalism</strong>
+<span class="font-body-md text-body-md text-on-surface-variant">Excellent communication skills and a commitment to student success.</span>
+</div>
+</li>
+</ul>
+</div>
+<!-- 3-Step Flow -->
+<div class="lg:col-span-7">
+<h2 class="font-h2 text-h2 text-on-background mb-8">Your Path to Tutoring</h2>
+<div class="space-y-8 relative before:absolute before:inset-0 before:ml-[1.125rem] before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-surface-variant before:to-transparent">
+<!-- Step 1 -->
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+<div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-surface-container-low bg-primary text-on-primary font-label-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                                1
+                            </div>
+<div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-xl bg-surface-container-lowest shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-variant">
+<h4 class="font-h3 text-h3 text-on-surface mb-2">Submit Application</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Fill out the comprehensive registration form below. Provide details about your education, experience, and the subjects you wish to teach.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+<div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-surface-container-low bg-surface-container-highest text-on-surface-variant font-label-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                                2
+                            </div>
+<div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-xl bg-surface-container-lowest shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-variant">
+<h4 class="font-h3 text-h3 text-on-surface mb-2">Review &amp; Verification</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Our academic team will review your profile, verify your credentials, and may contact you for a brief introductory interview.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+<div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-surface-container-low bg-surface-container-highest text-on-surface-variant font-label-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                                3
+                            </div>
+<div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-xl bg-surface-container-lowest shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-variant">
+<h4 class="font-h3 text-h3 text-on-surface mb-2">Start Teaching</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Once approved, your profile goes live! Set your schedule and start accepting booking requests from eager students.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Registration Form Section -->
+<section class="py-xl max-w-[800px] mx-auto px-6" id="registration">
+<div class="text-center mb-10">
+<h2 class="font-h2 text-h2 text-on-background mb-4">Tutor Application Form</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Complete the form below to begin your journey with EduSuccess Pakistan.</p>
+</div>
+<form class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-variant space-y-6">
+<!-- Personal Info -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-bold text-label-bold text-on-surface mb-2">Full Name</label>
+<input class="w-full h-12 px-4 rounded-lg border border-outline-variant bg-surface focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-body-md text-on-surface" placeholder="e.g. Ali Khan" type="text"/>
+</div>
+<div>
+<label class="block font-label-bold text-label-bold text-on-surface mb-2">Email Address</label>
+<input class="w-full h-12 px-4 rounded-lg border border-outline-variant bg-surface focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-body-md text-on-surface" placeholder="ali@example.com" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-bold text-label-bold text-on-surface mb-2">Phone Number</label>
+<input class="w-full h-12 px-4 rounded-lg border border-outline-variant bg-surface focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-body-md text-on-surface" placeholder="0300-0000000" type="tel"/>
+</div>
+<div>
+<label class="block font-label-bold text-label-bold text-on-surface mb-2">Highest Qualification</label>
+<select class="w-full h-12 px-4 rounded-lg border border-outline-variant bg-surface focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-body-md text-on-surface">
+<option value="">Select Qualification...</option>
+<option value="bachelors">Bachelor's Degree</option>
+<option value="masters">Master's Degree</option>
+<option value="phd">Ph.D.</option>
+<option value="other">Other Certification</option>
+</select>
+</div>
+</div>
+<!-- Subjects -->
+<div>
+<label class="block font-label-bold text-label-bold text-on-surface mb-2">Primary Subjects</label>
+<input class="w-full h-12 px-4 rounded-lg border border-outline-variant bg-surface focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-body-md text-on-surface mb-3" placeholder="e.g. Mathematics, Physics (comma separated)" type="text"/>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary/10 text-primary font-caption text-caption rounded-full">Mathematics</span>
+<span class="px-3 py-1 bg-primary/10 text-primary font-caption text-caption rounded-full">Physics</span>
+</div>
+</div>
+<!-- CV Upload -->
+<div>
+<label class="block font-label-bold text-label-bold text-on-surface mb-2">Upload CV / Resume</label>
+<div class="border-2 border-dashed border-outline-variant rounded-lg p-6 flex flex-col items-center justify-center text-center hover:border-primary transition-colors cursor-pointer bg-surface/50">
+<span class="material-symbols-outlined text-3xl text-on-surface-variant mb-2">upload_file</span>
+<span class="font-label-bold text-label-bold text-primary block mb-1">Click to upload or drag and drop</span>
+<span class="font-caption text-caption text-on-surface-variant">PDF, DOCX up to 5MB</span>
+</div>
+</div>
+<!-- Bio -->
+<div>
+<label class="block font-label-bold text-label-bold text-on-surface mb-2">Brief Bio (Why do you want to teach?)</label>
+<textarea class="w-full p-4 rounded-lg border border-outline-variant bg-surface focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-body-md text-on-surface resize-none" placeholder="Share a little about your teaching philosophy and experience..." rows="4"></textarea>
+</div>
+<div class="pt-4 border-t border-surface-variant">
+<button class="w-full py-4 bg-primary text-on-primary font-label-bold text-label-bold rounded-lg hover:bg-primary/90 transition-colors flex justify-center items-center gap-2" type="button">
+                        Submit Application
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<p class="text-center font-caption text-caption text-on-surface-variant mt-4">By submitting, you agree to our Terms of Service and Privacy Policy.</p>
+</div>
+</form>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="w-full py-12 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 border-t border-gray-200 dark:border-gray-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mx-auto max-w-[1200px] px-6">
+<div class="md:col-span-1">
+<div class="text-lg font-bold text-blue-900 dark:text-white mb-4">EduSuccess Pakistan</div>
+<p class="font-manrope text-sm text-slate-500 dark:text-slate-400">© 2024 EduSuccess Pakistan. High-quality education for a brighter future.</p>
+</div>
+<div class="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
+<div>
+<h4 class="font-label-bold text-label-bold text-blue-900 dark:text-white mb-4">Company</h4>
+<ul class="space-y-2">
+<li><a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 Transition-all duration-300 ease-in-out" href="#">Privacy Policy</a></li>
+<li><a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 Transition-all duration-300 ease-in-out" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-blue-900 dark:text-white mb-4">Support</h4>
+<ul class="space-y-2">
+<li><a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 Transition-all duration-300 ease-in-out" href="#">FAQ</a></li>
+<li><a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 Transition-all duration-300 ease-in-out" href="#">Contact Support</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-blue-900 dark:text-white mb-4">Portals</h4>
+<ul class="space-y-2">
+<li><a class="font-manrope text-sm text-blue-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 Transition-all duration-300 ease-in-out" href="#">Tutor Portal</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

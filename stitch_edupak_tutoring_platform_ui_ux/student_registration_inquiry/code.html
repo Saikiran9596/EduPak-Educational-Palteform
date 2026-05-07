@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EduSuccess Pakistan - Register</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "secondary-fixed-dim": "#66df75",
+                            "on-tertiary-fixed-variant": "#43474a",
+                            "on-secondary-fixed": "#002106",
+                            "tertiary-fixed-dim": "#c4c7ca",
+                            "secondary-container": "#80f98b",
+                            "error": "#ba1a1a",
+                            "surface-container-high": "#e5e8ee",
+                            "on-secondary-container": "#007327",
+                            "on-primary": "#ffffff",
+                            "primary-container": "#003366",
+                            "surface-tint": "#3a5f94",
+                            "on-tertiary-container": "#999c9f",
+                            "on-secondary-fixed-variant": "#00531a",
+                            "surface-bright": "#f7f9ff",
+                            "on-error-container": "#93000a",
+                            "secondary-fixed": "#83fc8e",
+                            "on-tertiary": "#ffffff",
+                            "on-error": "#ffffff",
+                            "background": "#f7f9ff",
+                            "tertiary-container": "#303436",
+                            "primary": "#001e40",
+                            "tertiary": "#1b1f21",
+                            "surface-dim": "#d7dadf",
+                            "outline-variant": "#c3c6d1",
+                            "on-primary-fixed": "#001b3c",
+                            "error-container": "#ffdad6",
+                            "on-secondary": "#ffffff",
+                            "inverse-primary": "#a7c8ff",
+                            "primary-fixed-dim": "#a7c8ff",
+                            "outline": "#737780",
+                            "on-primary-fixed-variant": "#1f477b",
+                            "tertiary-fixed": "#e0e3e6",
+                            "on-background": "#181c20",
+                            "inverse-surface": "#2d3135",
+                            "surface": "#f7f9ff",
+                            "on-surface-variant": "#43474f",
+                            "inverse-on-surface": "#eef1f6",
+                            "surface-container-low": "#f1f4f9",
+                            "on-surface": "#181c20",
+                            "surface-container-highest": "#e0e3e8",
+                            "surface-container": "#ebeef3",
+                            "surface-container-lowest": "#ffffff",
+                            "on-tertiary-fixed": "#181c1e",
+                            "secondary": "#006e25",
+                            "primary-fixed": "#d5e3ff",
+                            "surface-variant": "#e0e3e8",
+                            "on-primary-container": "#799dd6"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                    },
+                    "spacing": {
+                            "md": "24px",
+                            "xl": "80px",
+                            "xs": "4px",
+                            "sm": "12px",
+                            "base": "8px",
+                            "gutter": "24px",
+                            "lg": "48px",
+                            "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                            "h1": ["Manrope"],
+                            "h2": ["Manrope"],
+                            "label-bold": ["Manrope"],
+                            "h3": ["Manrope"],
+                            "body-lg": ["Manrope"],
+                            "caption": ["Manrope"],
+                            "body-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                            "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                            "h2": ["36px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                            "label-bold": ["14px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                            "h3": ["24px", {"lineHeight": "1.4", "fontWeight": "700"}],
+                            "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                            "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                            "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background min-h-screen text-on-background font-body-md antialiased pt-20">
+<!-- TopNavBar: Suppressed. Registration is a Linear/Transactional flow -->
+<main class="w-full min-h-[calc(100vh-80px)] bg-gradient-to-br from-primary-fixed to-surface-bright flex items-center justify-center py-md px-4 sm:px-6 lg:px-8">
+<div class="max-w-container-max w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-gutter bg-surface-container-lowest rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.08)] overflow-hidden min-h-[800px]">
+<!-- Left Side: Illustration, Branding, Trust -->
+<div class="hidden lg:flex flex-col justify-between bg-primary p-lg relative overflow-hidden text-on-primary">
+<!-- Decorative Background Elements -->
+<div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-primary-container opacity-50 blur-3xl"></div>
+<div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-inverse-primary opacity-20 blur-3xl"></div>
+<div class="relative z-10">
+<h1 class="font-h2 text-h2 mb-sm">EduSuccess Pakistan</h1>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim">Your Path to Academic Excellence Begins Here.</p>
+</div>
+<div class="relative z-10 flex-grow flex flex-col justify-center mt-xl mb-xl">
+<img alt="Students studying" class="w-full h-64 object-cover rounded-lg shadow-md mb-md" data-alt="diverse group of happy students studying together in a bright modern library with natural sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw71cq0lyzC1GkTiF-WbyxRDgY4qh1yrDuD0PUJHD_XtkE6cZiCzebYc91ncy0TlsHAEqsLSiKIenwDl3oMf4xfYZHsr3_DNyeqh7RX5K5C9MQ95IzO2WWilecFE_26vDWAO22r5Msil5DOXCtBeohZUE55JKyrMPntwQET1-IbleSz8HosuT5c7zdbHuiwl6etEfugXGorDBI9orauTVM7s_G-7gHn-pbKBzmUipLnPESSDTudBgUQIiJY0ZLFI6_ghgVBrPHE-V3"/>
+<div class="space-y-sm">
+<!-- Testimonial 1 -->
+<div class="bg-white/10 backdrop-blur-sm p-sm rounded-lg border border-white/20">
+<p class="font-body-md text-body-md italic mb-xs text-on-primary">"The tutor matching process was incredibly fast and the quality is unmatched. My daughter's grades improved significantly."</p>
+<p class="font-caption text-caption text-primary-fixed-dim">- Mrs. Ahmed, Parent</p>
+</div>
+</div>
+</div>
+<div class="relative z-10">
+<p class="font-label-bold text-label-bold text-primary-fixed-dim mb-sm uppercase tracking-wider">Trusted By Thousands</p>
+<div class="flex items-center gap-md grayscale opacity-50">
+<span class="material-symbols-outlined text-4xl">verified_user</span>
+<span class="material-symbols-outlined text-4xl">school</span>
+<span class="material-symbols-outlined text-4xl">auto_awesome</span>
+</div>
+</div>
+</div>
+<!-- Right Side: Form Content -->
+<div class="p-md sm:p-lg flex flex-col">
+<!-- Progress Bar -->
+<div class="mb-lg">
+<div class="flex justify-between items-center mb-xs">
+<span class="font-label-bold text-label-bold text-primary">Step 1 of 4</span>
+<span class="font-label-bold text-label-bold text-outline">Student Details</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2">
+<div class="bg-secondary h-2 rounded-full w-1/4 transition-all duration-300"></div>
+</div>
+</div>
+<div class="flex-grow flex flex-col">
+<!-- Step 1: Student Details -->
+<div class="flex-grow flex flex-col" id="step1">
+<h2 class="font-h3 text-h3 text-on-surface mb-sm">Let's get started</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Please provide your basic contact information.</p>
+<div class="space-y-sm flex-grow">
+<!-- Name -->
+<div>
+<label class="block font-label-bold text-label-bold text-on-surface mb-xs">Full Name</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-outline">person</span>
+<input class="w-full h-12 pl-10 pr-sm rounded-lg border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-body-md text-body-md" placeholder="e.g. Ali Khan" type="text"/>
+</div>
+</div>
+<!-- Email -->
+<div>
+<label class="block font-label-bold text-label-bold text-on-surface mb-xs">Email Address</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-outline">mail</span>
+<input class="w-full h-12 pl-10 pr-sm rounded-lg border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-body-md text-body-md" placeholder="ali@example.com" type="email"/>
+</div>
+</div>
+<!-- Phone -->
+<div>
+<label class="block font-label-bold text-label-bold text-on-surface mb-xs">Phone Number</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-outline">phone</span>
+<input class="w-full h-12 pl-10 pr-sm rounded-lg border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-body-md text-body-md" placeholder="0300 1234567" type="tel"/>
+</div>
+</div>
+<!-- Grid for City & Role -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-sm">
+<div>
+<label class="block font-label-bold text-label-bold text-on-surface mb-xs">City</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-outline">location_city</span>
+<select class="w-full h-12 pl-10 pr-sm rounded-lg border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-body-md text-body-md appearance-none">
+<option>Lahore</option>
+<option>Karachi</option>
+<option>Islamabad</option>
+</select>
+<span class="material-symbols-outlined absolute right-sm top-1/2 -translate-y-1/2 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<div>
+<label class="block font-label-bold text-label-bold text-on-surface mb-xs">I am a...</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-outline">face</span>
+<select class="w-full h-12 pl-10 pr-sm rounded-lg border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-body-md text-body-md appearance-none">
+<option>Student</option>
+<option>Parent</option>
+</select>
+<span class="material-symbols-outlined absolute right-sm top-1/2 -translate-y-1/2 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="mt-lg pt-sm border-t border-surface-variant flex justify-end">
+<button class="bg-primary text-on-primary font-label-bold text-label-bold h-12 px-lg rounded-lg shadow-sm hover:bg-primary-container hover:shadow-md transition-all flex items-center gap-xs">
+                                Next Step
+                                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Note: In a real implementation, Steps 2, 3, 4 would be managed by JS or separate routes. 
+                         For this static design, we render Step 1 prominently to show the component structure. -->
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar: Suppressed. Registration is a Linear/Transactional flow -->
+<!-- Footer: Suppressed on transactional forms to maintain focus -->
+</body></html>

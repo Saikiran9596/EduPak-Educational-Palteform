@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - EduSuccess Pakistan</title>
+<!-- Google Fonts: Manrope -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#66df75",
+                        "on-tertiary-fixed-variant": "#43474a",
+                        "on-secondary-fixed": "#002106",
+                        "tertiary-fixed-dim": "#c4c7ca",
+                        "secondary-container": "#80f98b",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e5e8ee",
+                        "on-secondary-container": "#007327",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#003366",
+                        "surface-tint": "#3a5f94",
+                        "on-tertiary-container": "#999c9f",
+                        "on-secondary-fixed-variant": "#00531a",
+                        "surface-bright": "#f7f9ff",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#83fc8e",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "background": "#f7f9ff",
+                        "tertiary-container": "#303436",
+                        "primary": "#001e40",
+                        "tertiary": "#1b1f21",
+                        "surface-dim": "#d7dadf",
+                        "outline-variant": "#c3c6d1",
+                        "on-primary-fixed": "#001b3c",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#a7c8ff",
+                        "primary-fixed-dim": "#a7c8ff",
+                        "outline": "#737780",
+                        "on-primary-fixed-variant": "#1f477b",
+                        "tertiary-fixed": "#e0e3e6",
+                        "on-background": "#181c20",
+                        "inverse-surface": "#2d3135",
+                        "surface": "#f7f9ff",
+                        "on-surface-variant": "#43474f",
+                        "inverse-on-surface": "#eef1f6",
+                        "surface-container-low": "#f1f4f9",
+                        "on-surface": "#181c20",
+                        "surface-container-highest": "#e0e3e8",
+                        "surface-container": "#ebeef3",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#181c1e",
+                        "secondary": "#006e25",
+                        "primary-fixed": "#d5e3ff",
+                        "surface-variant": "#e0e3e8",
+                        "on-primary-container": "#799dd6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "xl": "80px",
+                        "xs": "4px",
+                        "sm": "12px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "lg": "48px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "h1": ["Manrope"],
+                        "h2": ["Manrope"],
+                        "label-bold": ["Manrope"],
+                        "h3": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "caption": ["Manrope"],
+                        "body-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "h2": ["36px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "label-bold": ["14px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "h3": ["24px", {"lineHeight": "1.4", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface antialiased min-h-screen flex flex-col">
+<!-- TopNavBar Shared Component -->
+<header class="bg-white/95 dark:bg-slate-900/95 backdrop-blur-md fixed top-0 w-full z-50 shadow-sm">
+<div class="flex items-center justify-between mx-auto max-w-[1200px] h-20 px-6">
+<!-- Brand Logo -->
+<a class="text-xl font-black text-blue-900 dark:text-white tracking-tighter" href="#">
+                EduSuccess Pakistan
+            </a>
+<!-- Navigation Links (Web) -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors" href="#">Find Tutors</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors" href="#">Services</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors" href="#">Pricing</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors" href="#">Recruitment</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors" href="#">About Us</a>
+</nav>
+<!-- Actions -->
+<div class="hidden md:flex items-center gap-4">
+<button class="font-label-bold text-label-bold text-primary bg-transparent border-2 border-primary hover:bg-surface-container-low transition-all rounded-DEFAULT px-6 py-2">
+                    Join as Tutor
+                </button>
+<button class="font-label-bold text-label-bold text-on-secondary bg-secondary hover:bg-secondary-fixed transition-all rounded-DEFAULT px-6 py-2 shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)]">
+                    Book a Lesson
+                </button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[120px] pb-xl">
+<div class="max-w-[1200px] mx-auto px-6">
+<!-- Page Header -->
+<div class="text-center max-w-2xl mx-auto mb-lg">
+<h1 class="font-h1 text-h1 text-primary mb-sm">Get in Touch</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    We're here to support your educational journey. Reach out to our team for inquiries, support, or guidance on finding the perfect tutor.
+                </p>
+</div>
+<!-- 3 Quick Contact Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-xl">
+<!-- Call Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-300 group">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center mb-sm group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:text-on-primary-container transition-colors" data-icon="call">call</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-xs">Call Us</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-sm">Available Mon-Sat, 9AM-6PM PKT</p>
+<a class="font-label-bold text-label-bold text-secondary hover:text-on-secondary-container transition-colors mt-auto" href="tel:+923001234567">
+                        +92 300 123 4567
+                    </a>
+</div>
+<!-- WhatsApp Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-300 group">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center mb-sm group-hover:bg-[#25D366]/20 transition-colors">
+<span class="material-symbols-outlined text-3xl text-[#25D366] transition-colors" data-icon="chat">chat</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-xs">WhatsApp</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-sm">Quick responses via chat</p>
+<a class="font-label-bold text-label-bold text-[#25D366] hover:text-[#128C7E] transition-colors mt-auto" href="#">
+                        Message Us
+                    </a>
+</div>
+<!-- Email Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-300 group">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center mb-sm group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:text-on-primary-container transition-colors" data-icon="mail">mail</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-xs">Email</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-sm">For detailed inquiries &amp; support</p>
+<a class="font-label-bold text-label-bold text-secondary hover:text-on-secondary-container transition-colors mt-auto" href="mailto:support@edusuccess.pk">
+                        support@edusuccess.pk
+                    </a>
+</div>
+</div>
+<!-- Two Column Layout: Info & Form -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Information & Map -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<div>
+<h2 class="font-h2 text-h2 text-primary mb-6">Our Headquarters</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                            Visit our main office or reach out through our official channels. We ensure a secure and trusted environment for all our students and tutors.
+                        </p>
+<div class="flex flex-col gap-6">
+<!-- Address -->
+<div class="flex items-start gap-4">
+<div class="mt-1">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="location_on">location_on</span>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-on-surface mb-1">Office Address</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                        Suite 402, EduTech Plaza,<br/>
+                                        Shahrah-e-Faisal, Karachi,<br/>
+                                        Pakistan 75400
+                                    </p>
+</div>
+</div>
+<!-- Hours -->
+<div class="flex items-start gap-4">
+<div class="mt-1">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="schedule">schedule</span>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-on-surface mb-1">Business Hours</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                        Monday - Friday: 9:00 AM - 6:00 PM<br/>
+                                        Saturday: 10:00 AM - 2:00 PM<br/>
+                                        Sunday: Closed
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Badge -->
+<div class="bg-surface-container-low rounded-lg p-4 flex items-center gap-4 mt-4">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="verified_user">verified_user</span>
+<div>
+<p class="font-label-bold text-label-bold text-on-surface">Verified Support Team</p>
+<p class="font-caption text-caption text-on-surface-variant">Safe &amp; Secure Communication</p>
+</div>
+</div>
+<!-- Map Image Container -->
+<div class="w-full h-[240px] rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] relative bg-surface-container-low border border-outline-variant mt-2">
+<!-- Placeholder for Map - In a real scenario, this would be an iframe or dynamic map component -->
+<img alt="Map showing location" class="w-full h-full object-cover opacity-80" data-alt="Digital map pin location centered on a clean, modern street map of Karachi, Pakistan in light mode, soft daylight, corporate aesthetic" data-location="Karachi, Pakistan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNpKRmKcQex2TVa_bY9IJtHiwm_MSL2ccV5yMds98sad5yUk_35ZChftZXsBduD7ckUc6KeSulQNaxpMEV1-IdvA8HVQJ-vf66ceuDPSOfI_DnOQUs77nO-TkKvG-tTWtTJ2UwreI5PFqDR3VlzFu-ONRrZ_zwIdeJvZpCg0wO1CUpwqb2PAqYNXM9T4k8Jm3-6sYRDVs4LBR6RiesN-HpVqQ8kDQhWjKSx2fCbbXyFLUFsgijmilOeYWPQ8g6SnpPxwt1kieSgyoD"/>
+</div>
+</div>
+<!-- Right Column: Contact Form -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest border border-outline-variant shadow-[0_8px_30px_rgba(0,0,0,0.08)] rounded-xl p-8 h-full">
+<h3 class="font-h3 text-h3 text-primary mb-2">Send a Message</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Fill out the form below and our academic advisors will get back to you within 24 hours.</p>
+<form class="flex flex-col gap-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- First Name -->
+<div class="flex flex-col gap-2">
+<label class="font-label-bold text-label-bold text-on-surface" for="firstName">First Name</label>
+<input class="h-[48px] px-[16px] bg-surface border border-outline-variant rounded-DEFAULT focus:border-primary focus:ring-2 focus:ring-primary-fixed-dim focus:outline-none transition-all font-body-md text-on-surface w-full" id="firstName" name="firstName" placeholder="Ali" type="text"/>
+</div>
+<!-- Last Name -->
+<div class="flex flex-col gap-2">
+<label class="font-label-bold text-label-bold text-on-surface" for="lastName">Last Name</label>
+<input class="h-[48px] px-[16px] bg-surface border border-outline-variant rounded-DEFAULT focus:border-primary focus:ring-2 focus:ring-primary-fixed-dim focus:outline-none transition-all font-body-md text-on-surface w-full" id="lastName" name="lastName" placeholder="Khan" type="text"/>
+</div>
+</div>
+<!-- Email Address -->
+<div class="flex flex-col gap-2">
+<label class="font-label-bold text-label-bold text-on-surface" for="email">Email Address</label>
+<input class="h-[48px] px-[16px] bg-surface border border-outline-variant rounded-DEFAULT focus:border-primary focus:ring-2 focus:ring-primary-fixed-dim focus:outline-none transition-all font-body-md text-on-surface w-full" id="email" name="email" placeholder="ali.khan@example.com" type="email"/>
+</div>
+<!-- I am a... (Dropdown Placeholder) -->
+<div class="flex flex-col gap-2">
+<label class="font-label-bold text-label-bold text-on-surface" for="role">I am a...</label>
+<div class="relative">
+<select class="appearance-none h-[48px] px-[16px] bg-surface border border-outline-variant rounded-DEFAULT focus:border-primary focus:ring-2 focus:ring-primary-fixed-dim focus:outline-none transition-all font-body-md text-on-surface w-full pr-10" id="role" name="role">
+<option disabled="" selected="" value="">Select an option</option>
+<option value="student">Student / Parent</option>
+<option value="tutor">Tutor</option>
+<option value="school">School / Institution</option>
+<option value="other">Other</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-outline">
+<span class="material-symbols-outlined text-xl" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Message -->
+<div class="flex flex-col gap-2">
+<label class="font-label-bold text-label-bold text-on-surface" for="message">Message</label>
+<textarea class="p-[16px] bg-surface border border-outline-variant rounded-DEFAULT focus:border-primary focus:ring-2 focus:ring-primary-fixed-dim focus:outline-none transition-all font-body-md text-on-surface w-full resize-y" id="message" name="message" placeholder="How can we help you?" rows="4"></textarea>
+</div>
+<!-- Submit Button -->
+<button class="h-[48px] px-lg bg-primary text-on-primary font-label-bold rounded-DEFAULT hover:bg-on-primary-fixed transition-colors shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] flex items-center justify-center gap-2 mt-2" type="submit">
+                                Send Message
+                                <span class="material-symbols-outlined text-xl" data-icon="send">send</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Shared Component -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full py-12 border-t border-slate-200 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mx-auto max-w-[1200px] px-6">
+<!-- Brand Column -->
+<div class="flex flex-col gap-4 col-span-1 md:col-span-1">
+<div class="text-lg font-bold text-blue-900 dark:text-white">
+                    EduSuccess Pakistan
+                </div>
+<p class="font-manrope text-sm text-slate-500 dark:text-slate-400 mt-2">
+                    High-quality education for a brighter future.
+                </p>
+<div class="font-manrope text-sm text-slate-500 dark:text-slate-400 mt-auto pt-4">
+                    © 2024 EduSuccess Pakistan. High-quality education for a brighter future.
+                </div>
+</div>
+<!-- Links Column 1 -->
+<div class="flex flex-col gap-3">
+<h4 class="font-label-bold text-label-bold text-primary mb-2">Legal</h4>
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 Transition-all duration-300 ease-in-out" href="#">
+                    Privacy Policy
+                </a>
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 Transition-all duration-300 ease-in-out" href="#">
+                    Terms of Service
+                </a>
+</div>
+<!-- Links Column 2 -->
+<div class="flex flex-col gap-3">
+<h4 class="font-label-bold text-label-bold text-primary mb-2">Support</h4>
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 Transition-all duration-300 ease-in-out" href="#">
+                    FAQ
+                </a>
+<!-- Active Link state based on JSON -->
+<a class="font-manrope text-sm text-blue-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 Transition-all duration-300 ease-in-out" href="#">
+                    Contact Support
+                </a>
+</div>
+<!-- Links Column 3 -->
+<div class="flex flex-col gap-3">
+<h4 class="font-label-bold text-label-bold text-primary mb-2">Portal</h4>
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 Transition-all duration-300 ease-in-out" href="#">
+                    Tutor Portal
+                </a>
+</div>
+</div>
+</footer>
+</body></html>
